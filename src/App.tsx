@@ -241,26 +241,26 @@ export default function App() {
               Evaluating Real Estate Value with Deep Learning and Regression Techniques
             </h2>
             <p className="text-slate-300 text-sm leading-relaxed mb-6">
-              This dashboard implements, trains, and evaluates three robust machine-learning algorithms on the real residential data of Pune. 
-              By introducing custom feature-engineered ratio indicators and full dimensional one-hot category maps, we have successfully optimized the Neural Network and Linear model fitting to yield state-of-the-art diagnostic reliability.
+              This dashboard trains and compares three regression approaches on the included Pune residential dataset.
+              It uses engineered ratio indicators and encoded category fields to support practical price exploration and model comparison.
             </p>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 pt-4 border-t border-white/10">
               <div>
                 <span className="block text-xl font-bold font-display text-emerald-400">99.80%</span>
-                <span className="block text-xs text-slate-400">Linear Regression R²</span>
+                <span className="block text-xs text-slate-400">Displayed Linear R^2</span>
               </div>
               <div>
                 <span className="block text-xl font-bold font-display text-indigo-400">98.52%</span>
-                <span className="block text-xs text-slate-400">Deep ANN R² Accuracy</span>
+                <span className="block text-xs text-slate-400">Displayed ANN R^2</span>
               </div>
               <div>
                 <span className="block text-xl font-bold font-display text-sky-400">92.36%</span>
                 <span className="block text-xs text-slate-400">Random Forest Ensemble</span>
               </div>
               <div>
-                <span className="block text-xl font-bold font-display text-purple-400">2,502</span>
-                <span className="block text-xs text-slate-400">Surveyed Row Datapoints</span>
+                <span className="block text-xl font-bold font-display text-purple-400">2,501</span>
+                <span className="block text-xs text-slate-400">Dataset Records</span>
               </div>
             </div>
           </div>
@@ -562,10 +562,10 @@ export default function App() {
                                   <span className="text-xs font-semibold px-2 py-0.5 bg-indigo-100 text-indigo-900 rounded-md">
                                     Linear Regression
                                   </span>
-                                  <span className="text-[10px] text-indigo-600 font-bold bg-indigo-50 px-1.5 py-0.2 rounded">99.80% R²</span>
+                                  <span className="text-[10px] text-indigo-600 font-bold bg-indigo-50 px-1.5 py-0.2 rounded">99.80% R^2</span>
                                 </div>
                                 <span className="block text-xs text-slate-500 font-medium">
-                                  Optimized weights on higher-dimensional engineered one-hot matrices.
+                                  Baseline weights on engineered and encoded feature vectors.
                                 </span>
                               </div>
                               <div className="text-left md:text-right">
@@ -585,10 +585,10 @@ export default function App() {
                                   <span className="text-xs font-semibold px-2 py-0.5 bg-indigo-100 text-indigo-950 rounded-md">
                                     Deep ANN Model
                                   </span>
-                                  <span className="text-[10px] text-indigo-600 font-bold bg-indigo-50 px-1.5 py-0.2 rounded">98.52% R²</span>
+                                  <span className="text-[10px] text-indigo-600 font-bold bg-indigo-50 px-1.5 py-0.2 rounded">98.52% R^2</span>
                                 </div>
                                 <span className="block text-xs text-indigo-900/80 font-semibold leading-normal">
-                                  ⚡ Fully optimized deep network utilizing target-scaling & momentum.
+                                  Neural network-style estimate using target scaling and momentum updates.
                                 </span>
                               </div>
                               <div className="text-left md:text-right">
@@ -607,7 +607,7 @@ export default function App() {
                           <div className="px-6 py-4 bg-slate-50 border-t border-slate-100 text-xs text-slate-500 flex items-start gap-2 leading-relaxed">
                             <Info className="h-4 w-4 text-indigo-500 shrink-0 mt-0.5" />
                             <span>
-                              <strong>Optimized Methodology:</strong> By introducing ratio variables (like space per-room/per-bath) and complete continuous category mapping, both our Linear Regression (99.80%) and Deep Neural Network (98.52%) have been optimized to give extremely reliable pricing estimations across all sectors.
+                              <strong>Methodology note:</strong> Ratio variables such as space per room and space per bathroom are used with encoded category fields. These comparison values are for project demonstration and should be revalidated before formal reporting.
                             </span>
                           </div>
                         </div>
@@ -711,8 +711,8 @@ export default function App() {
                       Deep Learning Model Loss Curve over Epochs
                     </h3>
                     <p className="text-xs text-slate-500 mb-6">
-                      Dynamic visualization of the Mean Squared Error optimizing steadily over epoch iterations. 
-                      With the inclusion of ratio multipliers and normalized category vectors, the neural network gains a clean, non-overfitting training trajectory to reach ~98.52% accuracy.
+                      Visualization of Mean Squared Error across training epochs.
+                      The curve helps compare training and validation behavior for the neural network-style model.
                     </p>
 
                     <div className="h-80 w-full">
