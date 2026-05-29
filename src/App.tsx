@@ -670,7 +670,7 @@ export default function App() {
                         <tr>
                           <th className="px-6 py-3.5 text-left text-xs font-bold text-slate-500 uppercase tracking-wider">Model Name</th>
                           <th className="px-6 py-3.5 text-left text-xs font-bold text-slate-500 uppercase tracking-wider">Type</th>
-                          <th className="px-6 py-3.5 text-center text-xs font-bold text-slate-500 uppercase tracking-wider">R² Score (Accuracy)</th>
+                          <th className="px-6 py-3.5 text-center text-xs font-bold text-slate-500 uppercase tracking-wider">R^2 Score</th>
                           <th className="px-6 py-3.5 text-center text-xs font-bold text-slate-500 uppercase tracking-wider">Mean Squared Error (MSE)</th>
                           <th className="px-6 py-3.5 text-center text-xs font-bold text-slate-500 uppercase tracking-wider">Mean Absolute Error (MAE)</th>
                           <th className="px-6 py-3.5 text-right text-xs font-bold text-slate-500 uppercase tracking-wider">Rank</th>
